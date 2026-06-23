@@ -1,0 +1,6 @@
+{
+  "name": "E-commerce Recommender System",
+  "description": "A friendly, customizable product recommender system that matches items to users based on their past interest and popular trends.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

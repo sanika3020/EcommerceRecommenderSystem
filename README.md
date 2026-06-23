@@ -5,13 +5,10 @@ A high-performance, full-stack, real-time personalized product recommendation en
 Here is a preview of the application in action. 
 🖥️ Main Dashboard Overview
 Interactive personalized recommendations, shopper profile switcher, and real-time live predictive utility matrix:
-![alt text](docs/screenshots/dashboard.png)
-🛒 Shopper Cart & Visual Catalog
-Real-time shopping cart simulator with instant recommendation updates based on continuous interactions:
-![alt text](docs/screenshots/cart_catalog.png)
-📊 Real-Time Collaborative Similarity Matrix
-Dynamic backend calculations displaying user-item prediction weights, utility scores, and interaction indexes:
-![alt text](docs/screenshots/matrix_charts.png)
+![SS-1]([(https://github.com/sanika3020/EcommerceRecommenderSystem/blob/main/ERS-1.png]))
+![SS-2]((https://github.com/sanika3020/EcommerceRecommenderSystem/blob/main/ERS%20-2.png))
+![SS-3]((https://github.com/sanika3020/EcommerceRecommenderSystem/blob/main/ERS-3.png))
+![SS-4]((https://github.com/sanika3020/EcommerceRecommenderSystem/blob/main/ERS-4.png))
 
 ✨ Features Key Core
 🤖 Scratch-Built Hybrid Recommender: Merges user-item ratings Collaborative Filtering (Cosine Similarity matching) with Content-Based filtering using dynamic tags to generate robust, cold-start-immune recommendations.

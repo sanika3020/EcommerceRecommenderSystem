@@ -1,5 +1,5 @@
  E-Commerce Recommendation Engine
-A high-performance, full-stack, real-time personalized product recommendation engine and shopping simulator. This application demonstrates custom collaborative-filtering and content-based recommendation techniques built from scratch, paired with a modern React dynamic storefront.
+A high-performance, real-time personalized product recommendation engine and shopping simulator. This application demonstrates custom collaborative-filtering and content-based recommendation techniques .
 
 📸 Screenshots
 Here is a preview of the application in action. 

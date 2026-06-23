@@ -10,6 +10,7 @@ Interactive personalized recommendations, shopper profile switcher, and real-tim
 ![SS-3]((https://github.com/sanika3020/EcommerceRecommenderSystem/blob/main/ERS-3.png))
 ![SS-4]((https://github.com/sanika3020/EcommerceRecommenderSystem/blob/main/ERS-4.png))
 
+
 ✨ Features Key Core
 1- Scratch-Built Hybrid Recommender: Merges user-item ratings Collaborative Filtering (Cosine Similarity matching) with Content-Based filtering using dynamic tags to generate robust, cold-start-immune recommendations.
 2- Real-Time Matrix Inspector: A fully interactive, live-updating visual matrix displaying current users, rated products, utility index scores, and predicted system weights.

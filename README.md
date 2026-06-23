@@ -1,20 +1,73 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+ E-Commerce Recommendation Engine
+A high-performance, full-stack, real-time personalized product recommendation engine and shopping simulator. This application demonstrates custom collaborative-filtering and content-based recommendation techniques built from scratch, paired with a modern React dynamic storefront.
 
-# Run and deploy your AI Studio app
+📸 Screenshots
+Here is a preview of the application in action. 
+🖥️ Main Dashboard Overview
+Interactive personalized recommendations, shopper profile switcher, and real-time live predictive utility matrix:
+![alt text](docs/screenshots/dashboard.png)
+🛒 Shopper Cart & Visual Catalog
+Real-time shopping cart simulator with instant recommendation updates based on continuous interactions:
+![alt text](docs/screenshots/cart_catalog.png)
+📊 Real-Time Collaborative Similarity Matrix
+Dynamic backend calculations displaying user-item prediction weights, utility scores, and interaction indexes:
+![alt text](docs/screenshots/matrix_charts.png)
 
-This contains everything you need to run your app locally.
+✨ Features Key Core
+🤖 Scratch-Built Hybrid Recommender: Merges user-item ratings Collaborative Filtering (Cosine Similarity matching) with Content-Based filtering using dynamic tags to generate robust, cold-start-immune recommendations.
+📈 Real-Time Matrix Inspector: A fully interactive, live-updating visual matrix displaying current users, rated products, utility index scores, and predicted system weights.
+👤 Dynamic Shopper Profiles: Create, manage, and delete active customer profiles on-the-fly. Choose user-specific shopping personas (e.g., gamers, standard, outdoorsy) to observe how the recommender tailors results instantly.
+✨ Fluid Micro-Interactions: Features animations powered by Motion/React (Framer Motion) for modals, shopping carts, and interactive rating stars.
+🛡️ Sandbox-Safety: Configured with local state fallback synchronizers, fully custom alerts, and modal confirmation states to guarantee seamless compatibility with sandboxed iframes.
+📦 Clean Full-Stack Bundle: Fully automated bundling via esbuild compiling the Express backend to a self-contained runtime.
 
-View your app in AI Studio: https://ai.studio/apps/5f5cb080-44fd-4b68-9b4d-602a299f1190
+🛠️ Tech Stack
+Frontend
+UI Framework: React with Vite & TypeScript
+Styling: Tailwind CSS (Modern utility CSS)
+Animations: Motion (motion/react)
+Icons: Lucide React
 
-## Run Locally
+Backend
+Runtime: Node.js, Express (REST API)
+Development tool: tsx (TypeScript Execute)
+Build System: esbuild for CJS production compilation
+Recommendation Math
+User-User Similarity: Cosine similarity metric
+Dynamic Hybridization: Weight-normalized rating interpolation
 
-**Prerequisites:**  Node.js
+🚀 Local Installation & Setup
+Follow these steps to run this project locally on your machine.
+Prerequisites
+Ensure you have Node.js (v18 or higher) installed.
+Ensure you have npm installed.
 
+1. Clone the Repository
+code
+Bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+2. Install Dependencies
+code
+Bash
+npm install
+3. Start Development Server
+This boots up the integrated frontend + Express API server utilizing automatic hot-reloading:
+code
+Bash
+npm run dev
+Open your browser and navigate to http://localhost:3000.
+4. Build and Start for Production
+To bundle and compile the application for a lightweight, optimized production container release:
+code
+Bash
+# Build Vite static assets and bundle the backend using esbuild
+npm run build
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+# Start the Node assembly server in production mode
+npm run start
+⚙️ How It Works (Dynamic Algorithm Architecture)
+The system relies on a composite user correlation value computed each time an interaction occurs:
+User Similarity Multipliers: Calculates absolute Euclidean distance and normalized dot-products of the rating vectors between all registered active shoppers.
+Mean-Centered Ratings Correction: Solves the "critic bias" anomaly where certain buyers rate items too harshly or lightly.
+Weight Combination: Merges collaborative prediction lists with tag-based filters (content-based classification) so that newly registered products receive appropriate discoverability weights (preventing the Cold Start Problem).

@@ -11,12 +11,12 @@ Interactive personalized recommendations, shopper profile switcher, and real-tim
 ![SS-4]((https://github.com/sanika3020/EcommerceRecommenderSystem/blob/main/ERS-4.png))
 
 ✨ Features Key Core
-🤖 Scratch-Built Hybrid Recommender: Merges user-item ratings Collaborative Filtering (Cosine Similarity matching) with Content-Based filtering using dynamic tags to generate robust, cold-start-immune recommendations.
-📈 Real-Time Matrix Inspector: A fully interactive, live-updating visual matrix displaying current users, rated products, utility index scores, and predicted system weights.
-👤 Dynamic Shopper Profiles: Create, manage, and delete active customer profiles on-the-fly. Choose user-specific shopping personas (e.g., gamers, standard, outdoorsy) to observe how the recommender tailors results instantly.
-✨ Fluid Micro-Interactions: Features animations powered by Motion/React (Framer Motion) for modals, shopping carts, and interactive rating stars.
-🛡️ Sandbox-Safety: Configured with local state fallback synchronizers, fully custom alerts, and modal confirmation states to guarantee seamless compatibility with sandboxed iframes.
-📦 Clean Full-Stack Bundle: Fully automated bundling via esbuild compiling the Express backend to a self-contained runtime.
+1- Scratch-Built Hybrid Recommender: Merges user-item ratings Collaborative Filtering (Cosine Similarity matching) with Content-Based filtering using dynamic tags to generate robust, cold-start-immune recommendations.
+2- Real-Time Matrix Inspector: A fully interactive, live-updating visual matrix displaying current users, rated products, utility index scores, and predicted system weights.
+3-  Dynamic Shopper Profiles: Create, manage, and delete active customer profiles on-the-fly. Choose user-specific shopping personas (e.g., gamers, standard, outdoorsy) to observe how the recommender tailors results instantly.
+4-  Fluid Micro-Interactions: Features animations powered by Motion/React (Framer Motion) for modals, shopping carts, and interactive rating stars.
+5-  Sandbox-Safety: Configured with local state fallback synchronizers, fully custom alerts, and modal confirmation states to guarantee seamless compatibility with sandboxed iframes.
+6-  Clean Full-Stack Bundle: Fully automated bundling via esbuild compiling the Express backend to a self-contained runtime.
 
 🛠️ Tech Stack
 Frontend
@@ -42,7 +42,7 @@ Ensure you have npm installed.
 1. Clone the Repository
 code
 Bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/sanika3020/EcommerceRecommenderSystem.git
 cd your-repo-name
 2. Install Dependencies
 code
@@ -63,8 +63,4 @@ npm run build
 
 # Start the Node assembly server in production mode
 npm run start
-⚙️ How It Works (Dynamic Algorithm Architecture)
-The system relies on a composite user correlation value computed each time an interaction occurs:
-User Similarity Multipliers: Calculates absolute Euclidean distance and normalized dot-products of the rating vectors between all registered active shoppers.
-Mean-Centered Ratings Correction: Solves the "critic bias" anomaly where certain buyers rate items too harshly or lightly.
-Weight Combination: Merges collaborative prediction lists with tag-based filters (content-based classification) so that newly registered products receive appropriate discoverability weights (preventing the Cold Start Problem).
+
